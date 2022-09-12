@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 
 class BmiPage extends StatefulWidget {
@@ -17,10 +19,10 @@ class _BmiPageState extends State<BmiPage> {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(Icons.ac_unit),
-                const SizedBox(width: 20),
-                const Text('BmiPage'),
+              children: const [
+                Icon(Icons.ac_unit),
+                SizedBox(width: 20),
+                Text('BmiPage'),
               ],
             ),
             const Text('BmiPage'),
